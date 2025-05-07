@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-black: #121212;
+  --modra: #0056B3;
+  --modra-hover: #003c7c;
+  --modra-transparent: #0080ff23;
+  --white: #ffffff;
+  --white-hover: #dddddd;
+  --bg-gray: #212121;
+  --card-gray: #1A1A1A;
+  --header-gray: #111111;
+  --gray-hover: #2e2e2e;
+  --gray-text: #9CA3AF;
 }
 
 @theme inline {
