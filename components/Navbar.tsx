@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
         </div>
 
         {/* Tlačítko rezervace (viditelné pořád) */}
-        <Link href="/" className='hidden lg:inline-block rounded-lg px-3 py-1 bg-[var(--modra)] hover:bg-[var(--modra-hover)]'>
+        <Link href="#contact" className='hidden lg:inline-block rounded-lg px-3 py-1 bg-[var(--modra)] hover:bg-[var(--modra-hover)]'>
           Rezervovat
         </Link>
 
@@ -49,26 +50,26 @@ const Navbar = () => {
       </nav>
 
       {/* Mobilní menu */}
-{menuOpen && (
-  <div
-    className="lg:hidden fixed top-0 left-0 w-full h-screen bg-[var(--header-gray)]/95 backdrop-blur-md z-40"
-    onClick={toggleMenu} // Kliknutí mimo zavře
-  >
-    <div
-      className="flex flex-col items-center justify-center gap-6 h-full"
-      onClick={(e) => e.stopPropagation()} // Zabrání zavření při kliknutí na odkaz
-    >
-      <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="/">Úvod</Link>
-      <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#about">O mně</Link>
-      <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#sluzby">Služby</Link>
-      <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#reference">Reference</Link>
-      <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#contact">Kontakt</Link>
-      <Link onClick={toggleMenu} className='mt-4 rounded-lg px-4 py-2 bg-[var(--modra)] hover:bg-[var(--modra-hover)]' href="#contact">
-        Rezervovat
-      </Link>
-    </div>
-  </div>
-)}
+      {menuOpen && (
+        <div
+          className="lg:hidden fixed top-0 left-0 w-full h-screen bg-[var(--header-gray)]/95 backdrop-blur-md z-40"
+          onClick={toggleMenu} // Kliknutí mimo zavře
+        >
+          <div
+            className="flex flex-col items-center justify-center gap-6 h-full"
+            onClick={(e) => e.stopPropagation()} // Zabrání zavření při kliknutí na odkaz
+          >
+            <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="/">Úvod</Link>
+            <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#about">O mně</Link>
+            <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#sluzby">Služby</Link>
+            <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#reference">Reference</Link>
+            <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#contact">Kontakt</Link>
+            <Link onClick={toggleMenu} className='mt-4 rounded-lg px-4 py-2 bg-[var(--modra)] hover:bg-[var(--modra-hover)]' href="#contact">
+              Rezervovat
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

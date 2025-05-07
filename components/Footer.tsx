@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <div>
-        <div className='max-w-11/12 mx-auto flex py-10'>
+        <div className='max-w-11/12 mx-auto flex py-10 border-t-2 border-[var(--gray-hover  )]'>
             <div className='space-y-2 flex-1/2 px-5 flex flex-col'>
                 <p className='text-lg pb-5'><span className='text-[var(--modra)]'>ML</span> DETAILING</p>
                 <p>Profesionální detailing a péče o váš automobil s důrazem na kvalitu a detail.</p>
