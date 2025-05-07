@@ -16,13 +16,13 @@ const Header = () => {
           <div className='flex flex-col sm:flex-row sm:justify-center sm:gap-5 gap-3 w-full max-w-md mx-auto'>
             <Link
               className='text-base sm:text-lg bg-[var(--modra)] hover:bg-[var(--modra-hover)] transition-all py-2 px-4 rounded-lg w-full sm:w-auto text-white text-center'
-              href="#"
+              href="#contact"
             >
               Objednat službu
             </Link>
             <Link
               className='text-base sm:text-lg bg-[var(--card-gray)] hover:bg-[var(--gray-hover)] transition-all py-2 px-4 rounded-lg w-full sm:w-auto text-center'
-              href=""
+              href="#contact"
             >
               Nezávazná konzultace
             </Link>

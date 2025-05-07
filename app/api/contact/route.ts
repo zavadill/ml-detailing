@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
   try {
     const data = await resend.emails.send({
-        from: 'Webový formulář <ml-detailing.cz>',
+        from: 'Webový formulář <adamzac33@seznam.cz>',
         to: 'adamzav33@seznam.cz',
         subject: `Nová zpráva od ${name}`,
         html: `

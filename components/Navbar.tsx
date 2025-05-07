@@ -63,7 +63,7 @@ const Navbar = () => {
       <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#sluzby">Služby</Link>
       <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#reference">Reference</Link>
       <Link onClick={toggleMenu} className='text-xl hover:text-[var(--modra)]' href="#contact">Kontakt</Link>
-      <Link onClick={toggleMenu} className='mt-4 rounded-lg px-4 py-2 bg-[var(--modra)] hover:bg-[var(--modra-hover)]' href="/">
+      <Link onClick={toggleMenu} className='mt-4 rounded-lg px-4 py-2 bg-[var(--modra)] hover:bg-[var(--modra-hover)]' href="#contact">
         Rezervovat
       </Link>
     </div>
