@@ -4,6 +4,7 @@ const About = () => {
   return (
     <div id='about' className='bg-[var(--bg-gray)]'>
       <div className='max-w-11/12 mx-auto py-20 flex lg:flex-col'>
+      {/*
         <div className='flex-1/2 flex items-center'>
             <img src="sdsd" alt="" />
             <div className='p-7 bg-[var(--modra)] rounded-lg'>
@@ -11,9 +12,10 @@ const About = () => {
                 <p>v profesionálním detailingu</p>
             </div>
         </div>
-        <div className='flex-1/2 text-base space-y-5'>
+     */ }
+        <div className='text-base space-y-5'>
             <h2 className='text-3xl'>O mně</h2>
-            <p className='text-3xl font-montser'>Matyáš Lexmaul</p>
+            <p className='text-3xl font-montser'>Jmenuji se Matyáš Lexmaul</p>
             <p className=''>Vítejte v ML Detailing, kde se péče o váš vůz stává uměním. Jako zakladatel a hlavní detailer, přináším do každého projektu vášeň pro dokonalost a více než pět let zkušeností v oboru. Věřím, že opravdový detailing není jen o čistotě – je o preciznosti, péči a respektu k vašemu vozidlu.</p>
             <p className=''>Můj přístup je jednoduchý: každý automobil si zaslouží individuální péči zaměřenou na nejmenší detaily. Používám pouze prémiové produkty a nejmodernější techniky, abych dosáhl výsledků, které překonají vaše očekávání.</p>
             <div className='p-2'>
